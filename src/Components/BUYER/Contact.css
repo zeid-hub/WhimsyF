@@ -1,0 +1,116 @@
+.div-contact {
+  width: 97%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+}
+
+.div-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.my-p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.my-h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.75em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

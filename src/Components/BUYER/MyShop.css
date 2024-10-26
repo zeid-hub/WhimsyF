@@ -1,0 +1,115 @@
+.div-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.Header {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 260px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.product-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.product-images img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.divtoshta {
+  text-align: left;
+  width: 100%;
+}
+
+.divtoshta h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+
+.p-price {
+  font-size: 1.1em;
+  margin: 6px 0;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.p-price span {
+  font-weight: normal;
+  color: #333;
+}
+
+.p-description {
+  font-size: 0.9em;
+  margin: 6px 0;
+  color: #666;
+  line-height: 1.4;
+}
+
+.p-quantity {
+  font-size: 0.9em;
+  margin: 6px 0;
+  color: #999;
+}
+
+.p-quantity span {
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-button {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-size: 1em;
+}
+
+.cart-button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,111 @@
+.div-season {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 96%;
+}
+
+.season {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.season:hover {
+  transform: scale(1.05);
+}
+
+.season-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.season-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.season-content h2 {
+  margin: 0;
+}
+
+.season-content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #13f013;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 200px;
+}
+
+.season-content button:hover {
+  background: #ddd;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Specific season classes for additional customization if needed */
+.season-winter {
+  border: 2px solid #00f;
+}
+
+.season-spring {
+  border: 2px solid #0f0;
+}
+
+.season-summer {
+  border: 2px solid #ff0;
+}
+
+.season-autumn {
+  border: 2px solid #f60;
+}
+
+/* Active season class */
+.season.active .season-content {
+  background: rgba(0, 0, 0, 0.7);
+}

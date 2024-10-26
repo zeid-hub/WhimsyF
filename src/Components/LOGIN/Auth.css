@@ -3,7 +3,7 @@
 }
 
 .login-page body {
-    background-color: #ffed96;
+    background-color: #a9cce3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,7 @@
     height: 100vh;
     margin: -20px 0 50px;
 }
+
 
 .login-page h1 {
     font-weight: bold;
@@ -35,8 +36,8 @@
 
 .login-page button {
     border-radius: 20px;
-    border: 1px solid #FFD700;
-    background-color: #FFD700;
+    border: 1px solid #3175a3;
+    background-color: #65a6d1;
     color: black;
     font-size: 12px;
     font-weight: bold;
@@ -115,7 +116,8 @@ label#form-label {
     max-width: 100%;
     min-height: 650px;
     margin-top: 30px;
-
+    margin-bottom: 30px;
+    margin-left: 500px;
 }
 
 .login-page .form-container {
@@ -179,9 +181,9 @@ label#form-label {
   }
   
 .login-overlay {
-    background: #FFD700;
-    background: -webkit-linear-gradient(to right, #FFD700, #FFD700);
-    background: linear-gradient(to right, #FFD700, #FFD700);
+    background: #65a6d1;
+    background: -webkit-linear-gradient(to right, #65a6d1, #65a6d1);
+    background: linear-gradient(to right, #65a6d1, #65a6d1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;

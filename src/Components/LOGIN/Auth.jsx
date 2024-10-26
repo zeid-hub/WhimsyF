@@ -31,10 +31,7 @@ function Login(){
         username: "",
         email: "",
         password: "",
-        confirmPassword: "",
-        location: "",
-        contact: "",
-        role: "",
+        confirmPassword: ""
     });
 
     const handleChange = (e) => {
@@ -71,7 +68,7 @@ function Login(){
         }
 
         try {
-            const response = await fetch("https://mybanda-backend-88l2.onrender.com/signup", {
+            const response = await fetch("http://127.0.0.1:5555/adduser", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -101,6 +98,7 @@ function Login(){
                 // }
                 // // navigate('/driverhomepage');
                 console.log('Successful');
+                navigate("/home")
             } else {
                 toast.error("Signup failed. Please try again.", { position: "top-right", className: "toast-message"  });
                 console.error('Login failed:', response.statusText);
@@ -125,7 +123,7 @@ function Login(){
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://mybanda-backend-88l2.onrender.com/login", {
+            const response = await fetch("http://127.0.0.1:5555/login", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -152,21 +150,22 @@ function Login(){
 
 
 
-                if (role === 'buyer'){
-                    navigate('/my_banda')
-                } else if (role === 'seller' && newSeller){
-                    navigate('/sellerdash')
-                } else if (role === 'seller' && !newSeller){
-                    navigate('/oldsellerdash')
-                }else if (role === 'delivery'){
-                    navigate('/driverAnalytics')
-                } else if(role === 'banda_admin'){
-                    navigate('/banda_admin')
-                } else {
-                    console.log("this user has no route")
-                }
+                // if (role === 'buyer'){
+                //     navigate('/my_banda')
+                // } else if (role === 'seller' && newSeller){
+                //     navigate('/sellerdash')
+                // } else if (role === 'seller' && !newSeller){
+                //     navigate('/oldsellerdash')
+                // }else if (role === 'delivery'){
+                //     navigate('/driverAnalytics')
+                // } else if(role === 'banda_admin'){
+                //     navigate('/banda_admin')
+                // } else {
+                //     console.log("this user has no route")
+                // }
                 
                 console.log('Successful');
+                navigate("/home")
             } else {
                 toast.error("Login failed. Please check your credentials.", {
                     position: "top-right",
@@ -182,20 +181,11 @@ function Login(){
 
 
     return (
-        <div id="container" className={`container ${addclass}`}>
+        <div className="center-container">
+                <div id="container" className={`container ${addclass}`}>
             <div className="form-container sign-up-container">
                 <form onSubmit={handleSubmit}>
                     <h4 id="form-title">Create Account!</h4>
-                    {/* <label id="form-label" htmlFor="name">Name:</label>
-                    <input 
-                        type="text"    
-                        name="name" 
-                        id="name"
-                        placeholder="Name" 
-                        value={formData.name} 
-                        onChange={handleChange} 
-                        required 
-                    /> */}
                     <label id="form-label" htmlFor="username">Username:</label>
                     <input 
                         type="text" 
@@ -284,7 +274,7 @@ function Login(){
             <div className="form-container log-in-container">
                 <form onSubmit={handleLogin}>
                     <h1>Login</h1>
-                    <label id="form-label" htmlFor="email">email:</label>
+                    <label id="form-label" htmlFor="email">Email:</label>
                     <input 
                         type="text" 
                         name="email"
@@ -330,6 +320,7 @@ function Login(){
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

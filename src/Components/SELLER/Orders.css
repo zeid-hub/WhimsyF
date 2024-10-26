@@ -1,0 +1,46 @@
+.div-orders {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.order-form {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-form div {
+    margin-bottom: 10px;
+}
+
+.form-error {
+    color: red;
+}
+
+.form-success {
+    color: green;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-item button {
+    margin-right: 10px;
+}
+
+.order-btn{
+    background-color: aqua;
+    width: 200px;
+    margin-left: 300px;
+}

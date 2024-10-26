@@ -1,0 +1,151 @@
+/* .questions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.questions-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.questions-list {
+    border-top: 1px solid #ddd;
+}
+
+.question-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-item:hover {
+    background-color: #f9f9f9;
+}
+
+.question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.answer {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    display: none;
+}
+
+.question-item.active .answer {
+    display: block;
+}
+
+.question-item.active .question {
+    color: #f0a500;
+}
+
+@media (max-width: 600px) {
+    .questions {
+        padding: 10px;
+    }
+
+    .question {
+        font-size: 15px;
+    }
+
+    .answer {
+        font-size: 13px;
+    }
+} */
+
+
+
+
+.questions {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.questions-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.questions-list {
+    border-top: 1px solid #ddd;
+}
+
+.question-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-item:hover {
+    background-color: #f9f9f9;
+}
+
+.question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.answer {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    display: none;
+}
+
+.question-item.active .answer {
+    display: block;
+}
+
+.question-item.active .question {
+    color: #f0a500;
+}
+
+.dropdown-icon {
+    font-size: 18px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.question-item.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+    .questions {
+        padding: 10px;
+    }
+
+    .question {
+        font-size: 15px;
+    }
+
+    .answer {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,63 @@
+.div-about {
+    padding: 1rem;
+    margin-top: 40px;
+    width: 98%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ccc;
+  }
+  
+  .about h1, .about h2, .about h3 {
+    margin-bottom: 1rem;
+  }
+
+  .header-2{
+    font-size: 30px;
+  }
+  
+  .par{
+    font-size: 22px;
+  }
+  .about p, .about ul {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about ul {
+    padding-left: 20px;
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #65a6d1;
+    color: black;
+  }
+  
+  .team-member h3 {
+    margin-top: 0;
+  }
+
+  .team-member img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 40%;
+    margin-bottom: 10px;
+  }
+
+  .my-pic{
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    margin-top: 40px;
+  }
